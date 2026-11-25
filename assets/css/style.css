@@ -224,19 +224,64 @@ ul { list-style: none; }
 }
 
 /* ============================================
-   SOBRE
+   PRINCÍPIO
    ============================================ */
-.sobre {
+.principio {
   background: var(--clr-surface);
   border-top: 1px solid var(--clr-border);
   border-bottom: 1px solid var(--clr-border);
+  text-align: center;
+  padding: 80px 0;
+}
+
+.principio__quote {
+  font-family: var(--ff-serif);
+  font-size: clamp(1.2rem, 2.5vw, 1.65rem);
+  font-style: italic;
+  color: var(--clr-text);
+  line-height: 1.7;
+  max-width: 820px;
+  margin: 0 auto 20px;
+  position: relative;
+}
+
+.principio__aspas {
+  color: var(--clr-accent);
+  font-size: 2.5rem;
+  line-height: 0;
+  vertical-align: -0.4em;
+  font-style: normal;
+}
+
+.principio__autor {
+  font-size: 0.9rem;
+  color: var(--clr-text-muted);
+  letter-spacing: 0.05em;
+}
+
+/* ============================================
+   SOBRE
+   ============================================ */
+.sobre {
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.sobre__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 760px;
 }
 
 .sobre__text {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   line-height: 1.9;
   color: var(--clr-text-muted);
-  max-width: 700px;
+}
+
+.sobre__text strong {
+  color: var(--clr-text);
+  font-weight: 600;
 }
 
 /* ============================================
@@ -329,6 +374,56 @@ ul { list-style: none; }
   display: flex;
   align-items: flex-start;
   gap: 6px;
+}
+
+/* ============================================
+   FORMAÇÃO — lista de cursos
+   ============================================ */
+.formacao__cursos {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.formacao__cursos li {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--clr-accent);
+  background: rgba(200, 169, 110, 0.08);
+  border: 1px solid rgba(200, 169, 110, 0.2);
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+/* Pin do endereço */
+.formacao__pin {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ============================================
+   OBJETIVO
+   ============================================ */
+.objetivo {
+  background: var(--clr-surface);
+  border-top: 1px solid var(--clr-border);
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.objetivo__text {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: var(--clr-text-muted);
+  max-width: 760px;
+}
+
+.objetivo__text strong {
+  color: var(--clr-text);
+  font-weight: 600;
 }
 
 /* ============================================
