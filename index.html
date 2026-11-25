@@ -4,189 +4,245 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eloáh Sousa Neres — Portfólio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-  <!-- NAV -->
+  <!-- ═══════════════════════════════════════
+       NAV FIXO
+  ══════════════════════════════════════════ -->
   <nav class="nav">
-    <div class="nav__inner">
-      <a href="#inicio" class="nav__logo">Eloáh.</a>
-      <ul class="nav__links">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
+    <div class="nav__left">
+      <span class="nav__wordmark">ELOÁH NERES</span>
+    </div>
+    <div class="nav__center">
+      <svg class="nav__monogram" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="22" font-family="'Brier',serif" font-weight="700" font-size="22" fill="currentColor">EN</text>
+      </svg>
+    </div>
+    <div class="nav__right">
+      <a href="#sobre" class="nav__btn nav__btn--lime">SOBRE</a>
+      <a href="#formacao" class="nav__btn nav__btn--dark">FORMAÇÃO</a>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero" id="inicio">
+  <!-- ═══════════════════════════════════════
+       HERO — fundo claro, foto central
+  ══════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero__bg-text" aria-hidden="true">ELOÁH</div>
     <div class="hero__inner">
-      <div class="hero__text">
-        <span class="hero__eyebrow">Portfólio Pessoal</span>
-        <h1 class="hero__title">Olá, eu sou<br /><span class="hero__name">Eloáh.</span></h1>
-        <p class="hero__sub">15 anos · Foco em Sistemas Autônomos &amp; Palestras</p>
-        <a href="#formacao" class="btn btn--primary">Ver Formação</a>
+      <div class="hero__meta hero__meta--left">
+        <span class="eyebrow">PORTFÓLIO</span>
+        <span class="eyebrow">2026</span>
       </div>
-      <div class="hero__photo">
-        <img src="assets/images/eloah-foto.jpg" alt="Foto de Eloáh Sousa Neres" />
+      <div class="hero__photo-wrap">
+        <div class="hero__photo-frame">
+          <img src="assets/images/eloah-foto.jpg" alt="Eloáh Sousa Neres" class="hero__photo" />
+        </div>
+        <div class="hero__name-block">
+          <span class="hero__name-first">ELOÁH</span>
+          <span class="hero__name-last">SOUSA NERES</span>
+        </div>
       </div>
+      <div class="hero__meta hero__meta--right">
+        <span class="eyebrow">15 ANOS</span>
+        <span class="eyebrow">DEV · SISTEMAS</span>
+      </div>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span>SCROLL</span>
+      <div class="hero__scroll-line"></div>
     </div>
   </section>
 
-  <!-- PRINCÍPIO -->
-  <section class="section principio">
-    <div class="container">
-      <blockquote class="principio__quote">
-        <span class="principio__aspas">"</span>
-        Arquitetura de software com propósito humano: transformar dados e processos em
-        ferramentas de prevenção, consciência e mudança social.
-        <span class="principio__aspas">"</span>
-      </blockquote>
-      <p class="principio__autor">— Eloáh Sousa Neres</p>
+  <!-- ═══════════════════════════════════════
+       FRASE — seção tipográfica escura
+  ══════════════════════════════════════════ -->
+  <section class="typo-dark">
+    <div class="typo-dark__inner">
+      <p class="typo-dark__phrase">
+        <span class="typo-dark__serif">ARQUITETURA</span>
+        <span class="typo-dark__lime"> DE SOFTWARE</span><br/>
+        <span class="typo-dark__serif">COM PROPÓSITO</span><br/>
+        <span class="typo-dark__lime">HUMANO</span>
+        <span class="typo-dark__serif typo-dark__serif--sm">: TRANSFORMAR DADOS</span><br/>
+        <span class="typo-dark__serif">E PROCESSOS EM</span>
+        <span class="typo-dark__lime"> FERRAMENTAS</span><br/>
+        <span class="typo-dark__serif">DE PREVENÇÃO,</span>
+        <span class="typo-dark__lime"> CONSCIÊNCIA</span><br/>
+        <span class="typo-dark__serif">E MUDANÇA</span>
+        <span class="typo-dark__lime"> SOCIAL.</span>
+      </p>
+      <div class="typo-dark__line" aria-hidden="true"></div>
+      <p class="typo-dark__author">— Eloáh Sousa Neres</p>
     </div>
   </section>
 
-  <!-- SOBRE -->
+  <!-- ═══════════════════════════════════════
+       SOBRE — fundo claro
+  ══════════════════════════════════════════ -->
   <section class="section sobre" id="sobre">
     <div class="container">
-      <h2 class="section__title">Como tudo começou</h2>
-      <div class="sobre__content">
-        <p class="sobre__text">
-          O interesse pela área começou no ano passado, quando Eloáh estava na
-          <strong>Escola Estadual Dra. Maria Augusta Saraiva</strong>, mas se concretizou
-          em 2026 na <strong>ETEC Dra. Maria Augusta Saraiva (ETEC MAS)</strong> — a instituição
-          onde Eloáh Sousa construiu sua base técnica e seus conhecimentos em
-          <strong>Desenvolvimento de Sistemas</strong>.
-        </p>
-        <p class="sobre__text">
-          Com apenas 15 anos, Eloáh já direciona sua trajetória para <strong>Sistemas Autônomos
-          e Palestras</strong>, unindo tecnologia e impacto social. Seu objetivo é transformar
-          dados e processos em ferramentas de prevenção, consciência e mudança — colocando o
-          propósito humano no centro da arquitetura de software.
-        </p>
+      <div class="sobre__header">
+        <span class="eyebrow eyebrow--dark">COMO TUDO COMEÇOU</span>
+        <div class="sobre__rule"></div>
+      </div>
+      <div class="sobre__body">
+        <h2 class="sobre__title">
+          O INTERESSE<br/>
+          <span class="sobre__title--lime">PELA ÁREA</span><br/>
+          COMEÇOU EM 2025.
+        </h2>
+        <div class="sobre__text-wrap">
+          <p class="sobre__text">
+            Enquanto estudava na <strong>Escola Estadual Dra. Maria Augusta Saraiva</strong>,
+            Eloáh descobriu a programação. Em 2026, ingressou na
+            <strong>ETEC Dra. Maria Augusta Saraiva (ETEC MAS)</strong> —
+            onde construiu sua base técnica em <strong>Desenvolvimento de Sistemas</strong>.
+          </p>
+          <p class="sobre__text">
+            Com 15 anos, seu foco é <strong>Sistemas Autônomos &amp; Palestras</strong>:
+            unir tecnologia e impacto social para transformar dados em consciência e
+            mudança real.
+          </p>
+          <div class="sobre__focus">
+            <span class="focus__tag">SISTEMAS AUTÔNOMOS</span>
+            <span class="focus__tag focus__tag--lime">PALESTRAS</span>
+            <span class="focus__tag">DEV DE SISTEMAS</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FORMAÇÃO -->
+  <!-- ═══════════════════════════════════════
+       FORMAÇÃO — dois cards grandes
+  ══════════════════════════════════════════ -->
   <section class="section formacao" id="formacao">
     <div class="container">
-      <h2 class="section__title">Formação</h2>
-      <div class="formacao__grid">
+      <div class="formacao__header">
+        <span class="eyebrow eyebrow--dark">FORMAÇÃO ACADÊMICA</span>
+        <div class="sobre__rule"></div>
+      </div>
 
-        <!-- Card 1 — Universidade Anhembi Morumbi -->
-        <div class="formacao__card">
-          <div class="formacao__info">
-            <span class="formacao__badge">Ensino Superior</span>
-            <h3 class="formacao__inst">Universidade Anhembi Morumbi</h3>
-            <ul class="formacao__cursos">
-              <li>Gestão Empresarial</li>
-              <li>Inglês</li>
-              <li>Programação</li>
-              <li>AutoCad</li>
-            </ul>
-            <p class="formacao__desc">
-              Formação superior multidisciplinar que alia gestão, tecnologia e comunicação
-              global — base estratégica para atuar no mercado com visão ampla e competência técnica.
-            </p>
-          </div>
-          <div class="formacao__foto-wrap">
+      <!-- Card 1 — Universidade Anhembi Morumbi -->
+      <article class="edu-card edu-card--light">
+        <div class="edu-card__info">
+          <span class="edu-card__badge">ENSINO SUPERIOR</span>
+          <h3 class="edu-card__inst">UNIVERSIDADE<br/>ANHEMBI MORUMBI</h3>
+          <ul class="edu-card__courses">
+            <li>GESTÃO EMPRESARIAL</li>
+            <li>INGLÊS</li>
+            <li>PROGRAMAÇÃO</li>
+            <li>AUTOCAD</li>
+          </ul>
+          <p class="edu-card__desc">
+            Formação superior multidisciplinar que alia gestão, tecnologia
+            e comunicação global — base estratégica para atuar no mercado
+            com visão ampla e competência técnica.
+          </p>
+        </div>
+        <div class="edu-card__visual">
+          <div class="edu-card__img-wrap">
             <img
               src="assets/images/universidade-anhembi-morumbi.jpg"
               alt="Universidade Anhembi Morumbi"
-              class="formacao__foto"
+              class="edu-card__img"
             />
-            <p class="formacao__endereco">
-              <span class="formacao__pin">📍</span>
-              Universidade Anhembi Morumbi — Paulista, N 2000
-            </p>
+          </div>
+          <div class="edu-card__address">
+            <span class="edu-card__address-label">ENDEREÇO</span>
+            <span class="edu-card__address-text">Universidade Anhembi Morumbi<br/>Paulista, N 2000</span>
           </div>
         </div>
+      </article>
 
-        <!-- Card 2 — ETEC MAS -->
-        <div class="formacao__card">
-          <div class="formacao__info">
-            <span class="formacao__badge">Ensino Técnico · 2026</span>
-            <h3 class="formacao__inst">ETEC Dra. Maria Augusta Saraiva</h3>
-            <ul class="formacao__cursos">
-              <li>Desenvolvimento de Sistemas</li>
-            </ul>
-            <p class="formacao__desc">
-              A ETEC MAS é onde Eloáh Sousa construiu sua base técnica. O curso de
-              Desenvolvimento de Sistemas abriu as portas para o universo da programação,
-              lógica computacional e criação de soluções com impacto real.
-            </p>
-          </div>
-          <div class="formacao__foto-wrap">
+      <!-- Card 2 — ETEC MAS -->
+      <article class="edu-card edu-card--dark">
+        <div class="edu-card__info">
+          <span class="edu-card__badge edu-card__badge--lime">ENSINO TÉCNICO · 2026</span>
+          <h3 class="edu-card__inst">ETEC DRA.<br/>MARIA AUGUSTA<br/>SARAIVA</h3>
+          <ul class="edu-card__courses edu-card__courses--light">
+            <li>DESENVOLVIMENTO DE SISTEMAS</li>
+          </ul>
+          <p class="edu-card__desc edu-card__desc--light">
+            A ETEC MAS é onde Eloáh construiu sua base técnica.
+            O curso de Desenvolvimento de Sistemas abriu as portas
+            para o universo da programação e criação de soluções
+            com impacto real.
+          </p>
+        </div>
+        <div class="edu-card__visual">
+          <div class="edu-card__img-wrap">
             <img
               src="assets/images/etec-dra-maria-augusta.jpg"
               alt="ETEC Dra. Maria Augusta Saraiva"
-              class="formacao__foto"
+              class="edu-card__img"
             />
-            <p class="formacao__endereco">
-              <span class="formacao__pin">📍</span>
-              Etec Dra. Maria Augusta Saraiva — Campos Elíseos, Rua Guaianases
-            </p>
+          </div>
+          <div class="edu-card__address edu-card__address--light">
+            <span class="edu-card__address-label">ENDEREÇO</span>
+            <span class="edu-card__address-text">Etec Dra. Maria Augusta Saraiva<br/>Campos Elíseos, Rua Guaianases</span>
           </div>
         </div>
+      </article>
 
-      </div>
     </div>
   </section>
 
-  <!-- HABILIDADES -->
-  <section class="section habilidades" id="habilidades">
+  <!-- ═══════════════════════════════════════
+       HABILIDADES — fundo lima
+  ══════════════════════════════════════════ -->
+  <section class="section skills">
     <div class="container">
-      <h2 class="section__title">Habilidades</h2>
+      <div class="skills__header">
+        <span class="eyebrow eyebrow--dark">HABILIDADES</span>
+        <div class="sobre__rule"></div>
+      </div>
       <div class="skills__grid">
-        <div class="skill__tag">Desenvolvimento de Sistemas</div>
-        <div class="skill__tag">Programação</div>
-        <div class="skill__tag">AutoCad</div>
-        <div class="skill__tag">Gestão Empresarial</div>
-        <div class="skill__tag">Inglês</div>
-        <div class="skill__tag">Sistemas Autônomos</div>
-        <div class="skill__tag">Palestras</div>
-        <div class="skill__tag">Pensamento Crítico</div>
-        <div class="skill__tag">Impacto Social</div>
+        <div class="skill__item">DESENVOLVIMENTO<br/>DE SISTEMAS</div>
+        <div class="skill__item">PROGRAMAÇÃO</div>
+        <div class="skill__item">AUTOCAD</div>
+        <div class="skill__item">GESTÃO<br/>EMPRESARIAL</div>
+        <div class="skill__item">INGLÊS</div>
+        <div class="skill__item">SISTEMAS<br/>AUTÔNOMOS</div>
+        <div class="skill__item skill__item--accent">PALESTRAS</div>
+        <div class="skill__item">IMPACTO<br/>SOCIAL</div>
       </div>
     </div>
   </section>
 
-  <!-- OBJETIVO -->
+  <!-- ═══════════════════════════════════════
+       OBJETIVO — fundo escuro
+  ══════════════════════════════════════════ -->
   <section class="section objetivo">
     <div class="container">
-      <h2 class="section__title">Objetivo</h2>
+      <span class="eyebrow eyebrow--lime">OBJETIVO</span>
+      <h2 class="objetivo__title">
+        DOMINAR AS <span class="objetivo__lime">FERRAMENTAS</span><br/>
+        QUE PERMITEM CRIAR<br/>
+        SISTEMAS <span class="objetivo__lime">INTELIGENTES.</span>
+      </h2>
       <p class="objetivo__text">
-        No curso de <strong>Desenvolvimento de Sistemas</strong>, o objetivo de Eloáh é dominar
-        as ferramentas e linguagens que permitem construir sistemas inteligentes e autônomos.
-        Mais do que código, ela busca criar soluções que tenham propósito — que transformem
-        dados em consciência, e processos em instrumentos de mudança social. A tecnologia,
-        para Eloáh, é uma alavanca para tornar o mundo mais justo e informado.
+        No curso de Desenvolvimento de Sistemas, Eloáh busca construir soluções
+        que tenham propósito — transformar dados em consciência e processos em
+        instrumentos de mudança social. A tecnologia, para ela, é uma alavanca
+        para tornar o mundo mais justo e informado.
       </p>
     </div>
   </section>
 
-  <!-- CONTATO -->
-  <section class="section contato" id="contato">
-    <div class="container">
-      <h2 class="section__title">Contato</h2>
-      <p class="contato__text">Vamos conversar? Entre em contato!</p>
-      <a href="mailto:eloah@email.com" class="btn btn--primary">Enviar e-mail</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
   <footer class="footer">
-    <div class="container">
-      <p>© 2026 Eloáh Sousa Neres. Todos os direitos reservados.</p>
+    <div class="footer__inner container">
+      <span class="footer__name">ELOÁH SOUSA NERES</span>
+      <span class="footer__copy">© 2026</span>
     </div>
   </footer>
 
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
